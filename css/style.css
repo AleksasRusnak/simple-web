@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Bree+Serif|Josefin+Sans|Questrial');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+
+body{
+    background: #8b5d5d;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------- HEADERIS -------------- */
+
+.logo{
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    margin-left: 10rem;
+    margin-top: 3rem;
+}
+.logotext{
+    color: #f0e9e9;
+    padding-top: 4px;
+}
+
+.nav-wrapper {
+    position: fixed;
+    top: 0%;
+    left: 85%;
+    width: 15%;
+    height: 100%;
+    z-index: -1;
+    background: #fff;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.nav-wrapper ul {
+    position: absolute;
+    right: 1%;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.nav-wrapper ul li {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.nav-wrapper ul li:nth-child(1) a {
+    transition-delay: 0.2s;
+}
+
+.nav-wrapper ul li:nth-child(2) a {
+    transition-delay: 0.3s;
+}
+
+.nav-wrapper ul li:nth-child(3) a {
+    transition-delay: 0.4s;
+}
+
+.nav-wrapper ul li:nth-child(4) a {
+    transition-delay: 0.5s;
+}
+
+.nav-wrapper ul li:not(:first-child) {
+    margin-left: 0;
+}
+
+.nav-wrapper ul li a {
+
+    opacity: 0;
+    color: #000;
+    font-size: 30px;
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    padding-right: 10rem;
+    letter-spacing: 5px;
+    transform: translateX(-20px);
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.nav-wrapper ul li a:hover{
+    background: #8b5d5d;
+    color: white;
+    border-color: white;
+    transition: background 500ms ease;
+}
+
+#nav-btn {
+    position: fixed;
+    right: 10px;
+    top: 20px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 9999;
+    border-radius: 50%;
+}
+
+#nav-btn i {
+    background: white;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    margin-left: 13px;
+}
+
+#nav-btn i:nth-child(1) {
+    margin-top: 16px;
+}
+
+#nav-btn i:nth-child(2) {
+    margin-top: 4px;
+    opacity: 1;
+}
+
+#nav-btn i:nth-child(3) {
+    margin-top: 4px;
+}
+
+#nav:checked + #nav-btn {
+transform: rotate(45deg);
+}
+
+#nav:checked + #nav-btn i {
+background: #000;
+transition: transform 0.2s ease;
+}
+
+#nav:checked + #nav-btn i:nth-child(1) {
+transform: translateY(6px) rotate(180deg);
+}
+
+#nav:checked + #nav-btn i:nth-child(2) {
+opacity: 0;
+}
+
+#nav:checked + #nav-btn i:nth-child(3) {
+transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked ~ .nav-wrapper {
+z-index: 9990;
+opacity: 1;
+}
+
+#nav:checked ~ .nav-wrapper ul li a {
+opacity: 1;
+transform: translateX(0);
+}
+
+.hidden {
+display: none;
+}
+
+
+
+/* ----------------------- HEADERIO PABAIGA -------------------------- */
+#virsus {
+    height: 1200px;
+    width: auto;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    display: block;
+
+}
+
+.first{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    letter-spacing: 0;
+    font-size: 25px;
+    color: #fff;
+     font-family: 'Montserrat', sans-serif;
+     text-decoration: none;
+     writing-mode: vertical-rl;
+text-orientation: upright;
+text-transform: uppercase;
+
+}
+
+
+/* ---------------- VIDURIO PRADZIA --------------- */
+#middle{
+    height: 1050px;
+    width: auto;
+    background: #f0e9e9;
+    font-family: 'Montserrat', sans-serif;
+}
+.middle-text{
+    padding-top: 10rem;
+    text-align: center;
+}
+.middle-text h1{
+    color: #8b5d5d;
+    font-size: 2.6rem;
+}
+
+
+.middle-nuotrauka{
+    padding-left: 23rem;
+    text-align: center;
+    width: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 200px;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0;
+}
+.middle-nuotrauka-1, .middle-nuotrauka-1 h2{
+    padding-top: 2rem;
+}
+
+.middle-nuotrauka-2, .middle-nuotrauka-2 h2{
+    padding-top: 2rem;
+}
+.middle-nuotrauka-3, .middle-nuotrauka-3 h2{
+    padding-top: 2rem;
+}
+.middle-nuotrauka-1 p, .middle-nuotrauka-2 p, .middle-nuotrauka-3 p{
+    padding-top: 0.5rem;
+}
+ion-icon {
+    font-size: 10rem;
+    color: #8b5d5d;
+    }
+    .middle-btn{
+        width: 370px;
+        height: 70px;
+        text-align: center;
+        margin-left: 25rem;
+        margin-top: 15rem;
+        border: 2px solid #8b5d5d;
+        background: #8b5d5d;
+        border-radius: 10px;
+    }
+    .middle{
+        color: white;
+        padding-top: 4px;
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+    .middle 
+
+
+
+    /*  ------------------------- MIDDLE 2 ---------------- */
+
+    /* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: auto; background-color: #f0e9e9; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ 
+    .bg-skew {
+        background: #c19191;
+        -webkit-transform: skew(0deg, -10deg);
+        transform: skew(0deg, -10deg);
+        padding: 200px 0;
+        margin-top: 40px;
+        height: 1300px;
+      }
+      
+      .content{
+        -webkit-transform: skew(0deg, 10deg);
+        transform: skew(0deg, 10deg);
+        width: 5%;
+        margin-left: 15rem;
+        margin-top: 7rem;
+        letter-spacing: 0;
+        font-size: 25px;
+        color: #fff;
+         font-family: 'Montserrat', sans-serif;
+         text-decoration: none;
+         writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-transform: uppercase;
+    
+      }
+      .content:hover{
+          opacity: 0.3;
+          color: #c19191;
+          transition: 1s;
+      }
+      .darbu-galerija {
+          margin-top: -25rem;
+          margin-left: 40rem;
+          display: grid;
+          grid-template-columns: 50% 47%;
+          grid-template-rows: 250px 250px 250px;
+          grid-column-gap: 1rem;
+          grid-row-gap: 1rem;
+       
+
+      }
+      .darbu-galerija img{
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          display: block;
+      }
+
+      .darbu-galerija img:hover{
+          opacity: 0.3;
+      }
+      
+
+#middle3{
+    height: 1400px;
+    background: #f0e9e9;
+}
+
+      .paslaugu-galerija img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+      .paslaugu-galerija {
+        margin-top: 10rem;
+        margin-left: 20%;
+        margin-right: 20%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 250px 250px;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+      }
+      .content2{
+          text-align: center;
+    padding-top: 15rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+        }
+    
+    #bottom{
+        height: auto;
+        background: #c19191;
+        padding-top: 8rem;
+        -webkit-transform: skew(0deg, -7deg);
+        transform: skew(0deg, -7deg);
+
+    }
+    .sponsors-tekstas {
+        text-align: center;
+        padding-top: 6rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 65px;
+        color: #fff;
+        -webkit-transform: skew(0deg, 7deg);
+        transform: skew(0deg, 7deg);
+    }
+    .sponsors{
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15%;
+        grid-template-rows: 250px 250px;
+        grid-column-gap: 6rem;
+        grid-row-gap: 1rem;
+        padding-left: 20rem;
+        padding-top: 9rem;
+        -webkit-transform: skew(0deg, 7deg);
+        transform: skew(0deg, 7deg);
+    }
+    .container {
+        position: relative;
+        width: 100%;
+      }
+      
+      .image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+      }
+      
+      .container:hover .overlay {
+        opacity: 1;
+      }
+      .container:hover img{
+          opacity: 0.3;
+      }
+      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+
+
+      @media only screen and (max-width: 600px) {
+        .logo{
+            width: 50px;
+            height: 25px;
+            text-align: center;
+            margin-left: 5rem;
+            margin-top: 3rem;
+        }
+        .logotext{
+            color: white;
+            padding-top: 4px;
+        }
+        
+        .nav-wrapper {
+            position: fixed;
+            top: 0%;
+            left: auto;
+            width: 30%;
+            height: 100%;
+            z-index: -1;
+            background: #fff;
+            opacity: 0;
+            transition: all 1s ease;
+        }
+        #virsus {
+            height: 1000px;
+            width: 600px;
+        }
+        .slider img{
+            width: 200px;
+            height: 400px;
+            object-fit: cover;
+        
+        }
+        .slider{
+            height: 550px;
+            padding-right: 0rem;
+        }
+        .first{
+            margin-top: 1rem;
+            margin-left: 0.5rem;
+            letter-spacing: 0;
+            font-size: 25px;
+            color: #fff;
+             font-family: 'Montserrat', sans-serif;
+             text-decoration: none;
+             writing-mode: vertical-rl;
+        text-orientation: upright;
+        text-transform: uppercase;
+        
+        }
+        .sliderbtn{
+            margin-left: -0.7rem;
+            margin-top: -45rem;
+            width: 50px;
+            height: 800px;
+        }
+
+
+
+
+
+
+      } 
